@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap"
+        rel="stylesheet" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="..\css\address_book_home.css">
+    <title>Address Book Home</title>
+</head>
+
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+          <img src="..\assets\images\logo.jpeg" alt="logo" />
+          <div>
+            <span class="addressBook-text">Address</span><br />
+            <span class="addressBook-text addressBook-book">Book</span>
+          </div>
+        </div>
+      </header>
+      <div class="main-content">
+        <div class="header-content person-header">
+          <div class="person-detail-text">
+            Person Details
+            <div class="person-count">10</div>
+          </div>
+          <a href="..\pages\address_book_form.html" class="add-button">
+            <img src="..\assets\icons\plus_symbol.svg" alt="">+  Add Person
+          </a>
+        </div>
+        <div class="table-main">
+            <table id="table-display" class="table">
+             <!-- <tr>
+              <th>Full Name</th>
+              <th>Address</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Zip Code</th>
+              <th>Phone Number</th>
+              <th>Actions</th>
+             </tr>
+             <tr>
+              <td>Sreenath</td>
+              <td>Hanuman Nagar, Adoni</td>
+              <td>Kurnool</td>
+              <td>Andhra Pradesh</td>
+              <td>518301</td>
+              <td>91 7075321456</td>
+              <td>
+               <img src="..\assets\icons\delete-black-18dp.svg" alt="delete" id="1" onclick="remove(this)">
+               <img src="..\assets\icons\create-black-18dp.svg" alt="edit" id="1" onclick="update(this)">
+              </td>
+             </tr> -->
+            </table>
+           </div>
+      </div>
+      <script src="..\js\address_book_home.js"></script>
+</body>
+
+</html>
