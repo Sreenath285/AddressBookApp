@@ -101,7 +101,7 @@ body {
 .table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 10px 15px;
+    border-spacing: 0px 15px;
     min-width: 800px;
 }
 
