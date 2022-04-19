@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="..\css\address_book_form.css">
+  <title>Address Book Form</title>
+</head>
+
+<body>
+  <!-- UC_1 -->
+  <header class="header-content header">
+    <div class="logo-content">
+      <img src="..\assets\images\logo.jpeg" alt="logo" />
+      <div>
+        <span class="addressBook-text">Address</span><br />
+        <span class="addressBook-text addressBook-book">Book</span>
+      </div>
+    </div>
+  </header>
+  <!-- UC_2 -->
+  <div class="form-content">
+    <form action="#" class="form" onreset="resetForm()" onsubmit="save()">
+      <div class="form_header">
+        <div class="form_header_text">Person Address Form</div>
+        <a href="..\pages\address_book_form.html"><img src="..\assets\images\cancelButton.jpeg" alt="logo"></a>
+      </div>
+
+      <!-- UC 3 -->
+      <div class="form_content">
+        <div class="row_content">
+          <label for="name" class="label text">Full Name</label>
+          <br>
+          <input type="text" class="input" id="name" name="name" placeholder="Full Name" autocomplete="off" required>
+          <error-output class="name_error"></error-output>
+        </div>
+        <div class="row_content">
+          <label for="phoneNumber" class="label text">Phone Number</label>
+          <br>
+          <input type="tel" class="input" id="phoneNumber" name="phoneNumber" placeholder="Phone Number"
+            autocomplete="off" required>
+          <error-output class="tel_error"></error-output>
+        </div>
+        <div class="row_content">
+          <label for="address" class="label text">Address</label>
+          <br>
+          <textarea name="address" id="address" placeholder="Address" autocomplete="off" required></textarea>
+          <error-output class="address_error"></error-output>
+        </div>
+        <div class="row_content">
+          <div class="column_constrains">
+            <div class="column_content">
+              <label for="city" class="label text">City</label>
+              <br>
+              <select name="city" id="city" required>
+                <option selected disabled hidden value="Select City">Select City</option>
+                <option value="Kurnool">Kurnool</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Hyderabad">Hyderabad</option>
+              </select>
+            </div>
+            <div class="column_content">
+              <label for="state" class="label text">State</label>
+              <br>
+              <select name="state" id="state">
+                <option selected disabled hidden value="Select State">Select State</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+              </select>
+            </div>
+            <div class="column_content">
+              <label for="zip" class="label text">Zip code</label>
+              <br>
+              <input type="text" class="input zipcode" id="zip" name="zip" autocomplete="off" placeholder="Zip Code"
+                required>
+              <error-output class="zip_error"></error-output>
+            </div>
+          </div>
+        </div>
+        <div class="button_content">
+          <button type="submit" class="button button_submit" id="submitButton">Add</button>
+          <button type="reset" class="button button_reset" id="resetButton">Reset</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="..\js\address_book_form.js"></script>
+  <script src="..\js\contact_data.js"></script>
+</body>
+
+</html>
