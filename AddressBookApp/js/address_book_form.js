@@ -132,7 +132,7 @@ const createAndUpdateStorage = (contact) => {
 
 const createAddressBookData = (id) => {
   let contact = new Contact();
-  if (!id) contact.id = createNewEmployeeID();
+  if (!id) contact.id = createNewContactID();
   else contact.id = id;
   setAddressBookData(contact);
   return contact;
@@ -153,7 +153,7 @@ const setAddressBookData = (contact) => {
   alert(contact.toString());
 }
 
-const createNewEmployeeID = () => {
+const createNewContactID = () => {
   let contactID = localStorage.getItem("ContactID");
   contactID = !contactID ? 1 : (parseInt(contactID) + 1).toString();
   localStorage.setItem("ContactID", contactID);
